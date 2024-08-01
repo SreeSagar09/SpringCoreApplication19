@@ -1,0 +1,16 @@
+A Program to demonstrate the use of @PropertySource annotation:
+Programs:
+* Employee.java
+* Student.java
+* AppConfig.java
+* Test.java
+Note:
+* @PropertySource annotation is providing a convenient and declarative mechanism for adding a PropertySource to Spring's Environment.
+* @PropertySource annotation is used at class level.
+* @PropertySource annotation has some attributes those are name, value, ignoreResourceNotFound, encoding and factory.
+* By using value attribute we can configure properties file, the name attribute can accept array of properties files.
+* Syntax of single file configuration is @PropertySource(value = {"classpath:Employee.properties"})
+* Syntax of multiple files configuration is @PropertySource(value = {"classpath:Student.properties", "classpath:Course.properties"})
+Output:
+Employee [empId=101, empName=John, age=29, designation=Software Engineering, salary=45000.0]
+Student [sId=201, sName=Mike, age=21, courseName=Java, courseFee=12000.0, courseDuration=6-Months]
