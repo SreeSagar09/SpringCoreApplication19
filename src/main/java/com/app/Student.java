@@ -1,11 +1,9 @@
 package com.app;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource(value = {"classpath:Student.properties", "classpath:Course.properties"})
 public class Student {
 	@Value("${student.sId}")
 	private Integer sId;
